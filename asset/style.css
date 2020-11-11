@@ -22,12 +22,11 @@ h2 {
 #bigRect {
   display: flex;
   height: 85%;
-  background-color: red;
 }
 
 #lilRect {
-  width: 50%;
-  height: 50%;
+  width: 50;
+  height: 50;
   background-color: #1558F3;
 }
 

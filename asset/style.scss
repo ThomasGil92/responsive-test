@@ -1,32 +1,43 @@
 $none: none;
 $landscape: landscape;
 $portrait: portrait;
+$vh_100:100vh;
+$m_0:0;
+$real_vh:calc(var(--vh, 1vh) * 100);
+$page_padding:0 10px 0 10px;
+$flex:flex;
+$fifty:50;
+$pink: #e93353;
+$light_blue:#419ef5;
+$dark_blue:#1558F3;
+$flex_end:flex-end;
+$flex_start:flex-start;
+
 html {
-  height: 100vh;
+  height: $vh_100;
 }
 body {
-  margin: 0;
+  margin: $m_0;
 }
 #root {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: $vh_100;
+  height: $real_vh;
   margin: 0 auto;
-  padding: 0 10px 0 10px;
+  padding: $page_padding;
 }
 h2 {
-  display: flex;
-  margin: 0;
+  display: $flex;
+  margin: $m_0;
   height: 10%;
 }
 #bigRect {
-  display: flex;
+  display: $flex;
   height: 85%;
-  background-color: red;
 }
 #lilRect {
-  width: 50%;
-  height: 50%;
-  background-color: #1558F3;
+  width: $fifty;
+  height: $fifty;
+  background-color: $dark_blue;
 }
 
 @media (orientation: $landscape) {
@@ -34,9 +45,9 @@ h2 {
     display: $none;
   }
   #bigRect {
-    background-color: #419ef5;
-    justify-content: flex-end;
-    align-items: flex-start;
+    background-color: $light_blue;
+    justify-content: $flex_end;
+    align-items: $flex_start;
   }
 }
 @media (orientation: $portrait) {
@@ -44,8 +55,8 @@ h2 {
     display: $none;
   }
   #bigRect {
-    background-color: #e93353;
-    justify-content: flex-end;
-    align-items: flex-end;
+    background-color:$pink;
+    justify-content: $flex_end;
+    align-items: $flex_end;
   }
 }
