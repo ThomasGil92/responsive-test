@@ -50,6 +50,7 @@ h2 {
     align-items: $flex_start;
   }
 }
+
 @media (orientation: $portrait) {
   #hTitle {
     display: $none;
