@@ -6,7 +6,6 @@ $m_0:0;
 $real_vh:calc(var(--vh, 1vh) * 100);
 $page_padding:0 10px 0 10px;
 $flex:flex;
-$fifty:50%;
 $pink: #e93353;
 $light_blue:#419ef5;
 $dark_blue:#1558F3;
@@ -35,8 +34,8 @@ h2 {
   height: 85%;
 }
 #lilRect {
-  width: $fifty;
-  height: $fifty;
+  width: 50%;
+  height: 50%;
   background-color: $dark_blue;
 }
 
